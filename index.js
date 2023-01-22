@@ -33,7 +33,7 @@ app.use("/cart", cart_router)
 
 
 
-app.listen(process.env.port,async ()=>{
+app.listen(3080,async ()=>{
     try {
         await connection
         console.log("Connection DB done");
@@ -41,7 +41,7 @@ app.listen(process.env.port,async ()=>{
         console.log("Trouble connection error");
         console.log(error);
     }
-    console.log(`running at port ${process.env.port}`);
+    console.log(`running at port 3080`);
 })
 
 
