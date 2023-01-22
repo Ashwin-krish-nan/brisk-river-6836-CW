@@ -8,6 +8,7 @@ cart_router.get("/",async (req,res)=>{
     try {
         const cart = await CartModel.find(query)
         res.send(cart)
+        res.send("cart page")
     } catch (error) {
         console.log(error);
         res.send({"msg":"Something went wrong"})
